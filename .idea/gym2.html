@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="weight">
+    <input type="button" onclick="calc()">
+</form>
+<div id="output">
+</div>
+<script>
+    function calc(){
+        var totalweight =document.getElementById("weight").value;
+        var out=document.getElementById("output");
+        output.innerHTML =(totalweight +"need to be placed<br/>");
+        alert(totalweight);
+
+        if (totalweight==45){output.innerHTML+="bar needs to be placed<br/>";}
+        totalweight -=45;
+        console.log(totalweight)
+        if ((totalweight)/200 >=1) {output.innerHTML=parseInt(totalweight/200) +",100"+"need to be placed on each side<br>";
+
+        totalweight-=200;}
+        console.log(totalweight)
+        if ((totalweight)/90 >=1) {output.innerHTML+=parseInt(totalweight/90)+" ,45" +"need to be placed on each side<br> ";
+        totalweight-=90;}
+
+        if ((totalweight)/50 >=1) {output.innerHTML+=parseInt(totalweight/50) +",25"+"need to be placed on each side <br>";
+        totalweight-=50;}
+        console.log(totalweight)
+
+        if ((totalweight)/20 >=1) {output.innerHTML+=parseInt(totalweight/20) +",10"+"need to be placed on each side<br> ";
+        totalweight-=20;}
+
+        console.log(totalweight)
+        if ((totalweight)/10 >=1) {output.innerHTML+=parseInt(totalweight/10 )+",5"+"need to be placed on each side<br> ";
+        totalweight-=10;}
+        console.log(totalweight)
+
+        if ((totalweight)/5 >=1) {output.innerHTML+=parseInt(totalweight/5 )+",2.5" +"need to be placed on each side<br> ";
+        totalweight-=5;}
+        console.log(totalweight)
+
+
+        if((totalweight*10)%25!==0){output.innerHTML="error";}
+    }
+
+</script>
+</body>
+</html>
